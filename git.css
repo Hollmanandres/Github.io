@@ -1,6 +1,6 @@
 body
         {
-            background-color: goldenrod;
+            background-color: greenyellow;
             font-family: arial;
             color: red;
             font-size: x-large;
@@ -45,4 +45,9 @@ body
 #post
 {
 
+}
+
+image
+{
+    border-image-source: image("imagenees/Git.png");
 }
