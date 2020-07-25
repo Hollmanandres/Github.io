@@ -1,18 +1,18 @@
 body
         {
-            background-color: greenyellow;
-            font-family: arial;
-            color: red;
+            background-color: rgb(0, 114, 143);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(195, 255, 85);
             font-size: x-large;
             font-weight: lighter;
             font: outline;
+            text-align: justify;
         }
-
 #cabecera
 {
-    background: #33f;
+    background: rgb(195, 255, 85);
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.5);
-    color: honeydew;
+    color: rgb(0, 114, 143);
     font-weight: bold;
     margin: 0;
     padding: 0.5em;
@@ -28,26 +28,27 @@ body
     font-weight: normal;
     font-size: 0.8em;
 }
-
 #container
 {
-    width: 70%;
+    width: 80%;
     padding: 1em;
-    text-align: left;
-    border: 1px solid #ddd;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
+    text-align: justify;
 }
-
 #container h1
 {
     font-size: 30 px;
+    text-align: justify;
 }
-#post
+#footer
 {
-
-}
-
-image
-{
-    border-image-source: image("imagenees/Git.png");
+    width: 82%;
+    background-color: rgb(145, 197, 48);
+    color: rgb(0, 114, 143);
+    text-align: center;
+    padding: 0.5em;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto;
 }
