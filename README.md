@@ -215,6 +215,8 @@ README.md es una excelente práctica en tus proyectos, md significa Markdown, qu
 
 Lo interesante de Markdown es que funciona en muchas páginas, por ejemplo la edición en Wikipedia; es un lenguaje intermedio que no es HTML, no es texto plano, es una manera de crear excelentes texto formateados.
 
+# Git Rebase: reorganizando el trabajo realizado
 
+El comando rebase *es una mala práctica, nunca se debe usar*. Con rebase puedes recoger todos los cambios confirmados en una rama y ponerlos sobre otra.
 
 
