@@ -314,3 +314,8 @@ Se aclara que los formatos de archivos incluidos en *gitignore* deben ser borrad
 Existe un mundo alternativo en el cual vamos avanzando en una rama pero necesitamos en master uno de esos avances de la rama, para eso utilizamos el comando *git cherry-pick IDCommit.*
 
 *cherry-pick* es una mala práctica porque significa que estamos reconstruyendo la historia, usa cherry-pick con sabiduría. Si no sabes lo que estás haciendo ten mucho cuidado.
+
+## Reconstruir commits en Git con amend
+
+A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos *git commit --amend*, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.
+
