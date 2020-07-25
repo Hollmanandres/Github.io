@@ -1,4 +1,4 @@
-# Platzi - Curso Profesional de Git y GitHub
+# Git y GitHub
 ## Primeros pasos en Git[![First](https://res.cloudinary.com/hollmanandresf/image/upload/v1595673122/descarga_gdxnur.jpg "First")](https://res.cloudinary.com/hollmanandresf/image/upload/v1595673122/descarga_gdxnur.jpg "First") 
 
 Git está optimizado para guardar todos estos cambios de forma atómica e incremental, o sea, aplicando cambios sobre los últimos cambios, estos sobre los cambios anteriores y así hasta el inicio de nuestro proyecto.
