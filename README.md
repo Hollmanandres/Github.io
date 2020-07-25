@@ -242,7 +242,7 @@ Para agregar los cambios al stash se utiliza el comando:
 
 *git stash save "mensaje identificador del elemento del stashed"*
 
-## Obtener elelmentos del stash
+## Obtener elementos del stash
 
 El stashed se comporta como una Stack de datos comportándose de manera tipo LIFO (del inglés Last In, First Out, «último en entrar, primero en salir»), así podemos acceder al método pop.
 
