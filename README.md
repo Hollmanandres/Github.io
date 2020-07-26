@@ -319,3 +319,58 @@ Existe un mundo alternativo en el cual vamos avanzando en una rama pero necesita
 
 A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos *git commit --amend*, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.
 
+## Git Reset y Reflog: úsese en caso de emergencia
+Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el proyecto funcionaba.
+
+*git reset --soft HashDelHEAD* te mantiene lo que tengas en staging ahí.
+*git reset --hard HashDelHEAD* resetea absolutamente todo incluyendo lo que tengas en staging.
+*git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.*
+
+## Git Reset y Reflog: úsese en caso de emergencia
+
+¿Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el proyecto funcionaba.
+
+*git reset --soft HashDelHEAD* te mantiene lo que tengas en staging ahí.
+*git reset --hard HashDelHEAD*resetea absolutamente todo incluyendo lo que tengas en staging.
+*git reset* es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
+
+## Buscar en archivos y commits de Git con Grep y log
+A medida que nuestro proyecto se hace grande vamos a querer buscar ciertas cosas.
+
+Por ejemplo: ¿cuántas veces en nuestro proyecto utilizamos la palabra *color*?
+
+Para buscar utilizamos el comando *git grep color* y nos buscará en todo el proyecto los archivos en donde está la palabra *color*.
+
+Con *git grep -n color* nos saldrá un output el cual nos dirá en qué línea está lo que estamos buscando.
+Con *git grep -c color* nos saldrá un output el cual nos dirá cuántas veces se repite esa palabra y en qué archivo.
+Si queremos buscar cuántas veces utilizamos un atributo de HTML lo hacemos con *git grep -c "<p>"*.
+
+
+## Buscar en archivos y commits de Git con Grep y log
+*git grep color* -->use la palabra color
+*git grep la* --> donde use la palabra la
+*git grep -n color*–> en que lineas use la palabra color
+*git grep -n platzi* --> en que lineas use la palabra platzi
+*git grep -c la* --> cuantas veces use la palabra la
+*git grep -c paltzi* --> cuantas veces use la palabra platzi
+*git grep -c “<p>”*–> cuantas veces use la etiqueta <p>
+
+*git log-S “cabecera”* --> cuantas veces use la palabra cabecera en
+todos los commits.
+
+*grep–>*para los archivos
+*log -->* para los commits.
+
+
+## Comandos y recursos colaborativos en Git y GitHub
+
+*git shortlog*: Ver cuantos commits a hecho los miembros del equipo
+*git shortlog -sn*: Las personas que han hecho ciertos commits
+*git shortlog -sn --all*: Todos los commits (también los borrados)
+*git shortlog -sn --all --no-merges*: muestra las estadisticas de los comigs del repositorio donde estoy
+*git config --global alias.stats “shortlog -sn --all --no-merges”*: configura el comando *“shortlog -sn --all --no-merges”* en un Alias en las configuraciones globales de git del pc
+*git blame -c blogpost.html*: Muestra quien ha hecho cambios en dicho archivo identado
+*git blame --help*: Muestra en el navegador el uso del comando
+*git blame archivo -L 35, 60 -c*: Muestra quien escribio el codigo con informacion de la linea 35 a la 60, EJ: git blame css/estilos.css -L 35, 60 -c
+*git branch -r*: Muestra las Ramas remotas de GitHub
+*git branch -a*: Muestra todas las Ramas del repo y remotas de GitHub
