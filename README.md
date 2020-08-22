@@ -374,3 +374,15 @@ todos los commits.
 *git blame archivo -L 35, 60 -c*: Muestra quien escribio el codigo con informacion de la linea 35 a la 60, EJ: git blame css/estilos.css -L 35, 60 -c
 *git branch -r*: Muestra las Ramas remotas de GitHub
 *git branch -a*: Muestra todas las Ramas del repo y remotas de GitHub
+
+# Medidas relativas útiles en Responsive Design
+En esta clase aprenderás las medidas que existen en el campo del responsive design.
+
+Lo primero que debes tener en cuenta es que estas medidas son maleables, en la medida en que dependen de su fuente de origen o medida madre. Entre ellas se encuentran el 
+porcentaje (longitud referente al tamaño de los elementos padre), 
+los em (unidad relativa al tamaño de fuente especificada más cercano), 
+los rem (unidad relativa al tamaño de fuente especificada en el ancestro más lejano, como html o body) y 
+tamaños del viewport vw/vh (longitud relativa porcentual con respecto al viewport).
+
+Leonidas Esteban Gonzalez
+# 
